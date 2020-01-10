@@ -67,6 +67,16 @@ Using the hashed license plate numbers, a Chevy truck incurring 53 violations in
 ### Revenue Maximization Strategies
 ![gif](img/homer_devil.gif)
 
+I originally hoped to follow in the footsteps of ProPublica and examine how fines burdened different segments of Chicago society, but big data presents different headaches than small data. The US Census Bureau has massive amounts of demographic information, like race and household income, but I have not been able to find the exact data set laid out in the right format to ease merging operations. This will be a direction for future analysis.
+
+Absent external demographic information, I rescoped and determined that I could use the data at hand to investigate the levers the City of Chicago had access to to raise revenues.
+
+#### Hypothesis Testing
+![png](img/ticket_payprob_and_price.png)
+
+Because the data span 22 years, it can be observed that fines for various violations have increased over time, while some violation fines have remained constant. Information can also be generated about the proportion of tickets that have been paid over windows of time. The plot above focuses on violations for Rush Hour Parking. The cumulative proportion of tickets paid and the level 1 fine amount are shown. I wanted to explore whether raising fines decreased the probability of violators paying. This can be detected by a change in the slope of the cumulative probability line (blue), but because there are so many observations, it is not possible to visually detect effects. A rolling window of probabilities would be a future visualization goal.
+
+##### 
 what options does the city have?
 where to send enforcement agents
 the price to set tickets
