@@ -76,34 +76,47 @@ Absent external demographic information, I rescoped and determined that I could 
 
 Because the data span 22 years, it can be observed that fines for various violations have increased over time, while some violation fines have remained constant. Information can also be generated about the proportion of tickets that have been paid over windows of time. The plot above focuses on violations for Rush Hour Parking. The cumulative proportion of tickets paid and the level 1 fine amount are shown. I wanted to explore whether raising fines decreased the probability of violators paying. This can be detected by a change in the slope of the cumulative probability line (blue), but because there are so many observations, it is not possible to visually detect effects. A rolling window of probabilities would be a future visualization goal.
 
-##### 
+(Note: Level 1 fines are issued for violations, and level 2 fines are issued for continued noncompliance and/or unpaid tickets.)
+
+#####  Difference in Proportions Test Review
+![gif](img/CodeCogsEqn.gif)
+
+##### Results
+A six month window of records before and after a fine increase produced two samples for hypothesis testing. Some results follow:
+(The p-value for a one-sided difference in proportions test between tickets issued before and after a price increase are shown)
+
+###### Rush Hour Parking
+Rush hour parking level 1 fine increased:
+$30 > $50 (+67%) on 02/02/00 (p-val: 0.336)
+$50 > $60 (+20%) on 02/19/08 (p-val: 0.345)
+$60 > $100 (+67%) on 02/23/14 (p-val: 0.964)
+
+Conclusion:
+Rush hour parking fines were increased 3 times and a difference in proportions test was performed in the leading and trailing 6 months around the event. There was not enough evidence to reject the null hypothesis that raising ticket fines does not affect payment probability.
+
+(to do)
+Rush hour parking level 2 fine increased
+$60 > $100 (+67%) on 02/02/00 (p-val: 0.997)
+$100 > $120 (+20%) on 02/19/08 (p-val: 0.588)
+$120 > $200 (+67%) on 02/23/14 (p-val: 0.007)
+
+No fine increase
+02/02/00 (0.782), 02/02/01 (0.630)
+02/19/07 (0.819), 02/19/09 (0.799)
+02/23/13 (0.050), 02/23/15 (0.364)
+
+#### Conclusions
+The City of Chicago should raise fines to increase revenue, as drivers don't seem to be sensitive to price increases.
+
+### Future Directions
 what options does the city have?
 where to send enforcement agents
-the price to set tickets
-
+7 which non law enforcement departments perform well? show individual officer data.
 (can compare the ticket writing numbers for different officers)
 (can plot the area an officer works)
 (maybe can measure the performance of different agencies)
-
-what kind of violations are there?
-what violations make the most money?
-
-
-5 figures + title slide (3 slides of eda. 2 slides of hypothesis testing)
-
-2 overview of data set
-3 highest sources of revenue ytd 5/14/18 (parking data only) (top 5, then top 10 if time allows)
-
-|   Code   |               Violation Description               | FY2017 Revenue |
-|:--------:|:-------------------------------------------------:|:--------------:|
-| 0964125B | No city sticker vehicle under/equal to 16,000 lbs | \$924,032.51    |
-| 0964040B | Street cleaning                                   | \$544,842.56    |
-| 0964090E | Residential permit parking                        | \$501,186.09    |
-| 0964190A | Exp. meter non-central business district          | \$411,177.41    |
-| 0964150B | Parking/standing prohibited anytime               | \$338,213.08    |
-
-4 does raising ticket price affect probability of payment? (pick violations with highest ticket prices and price increases)
-5 does raising ticket price affect number of tickets issued?
 6 which violations burden non-poor minorities (in areas without a lot of political fundraising too)
-7 which non law enforcement departments perform well? show individual officer data.
-8 future direction
+
+### References
+
+(to do)
