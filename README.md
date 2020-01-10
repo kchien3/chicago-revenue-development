@@ -18,9 +18,23 @@ This section contains plots that demonstrate the types of information that can b
 
 #### Tickets Issued by Year and Fines Paid by Year
 ![png](img/tickets_by_year.png)
-what data do i have?
-speeding/red light tickets data (not used)
-parking/parked car violations (used)
+This is a plot of the number of tickets issued by the City of Chicago and the total fines paid aggregated by year. It can be observed that although the number of tickets issued has declined since 2002, the revenue drawn by the city has been robust to that decline. I believe the low number of ticket issued before 2002 indicates a data completeness issue, where not all violations have ticket information dating as far back as 1996.
+
+#### Top Ticketed Violations by Year
+![png](img/tickets_by_viol.png)
+Violations are coded alphanumerically by the City of Chicago, but some violation codes have been split into subcodes over time, like city sticker violations:
+
+| violation code |                violation description               |
+|:--------------:|:--------------------------------------------------:|
+| 0964125        | NO CITY STICKER OR IMPROPER DISPLAY                |
+| 0964125B       | NO CITY STICKER VEHICLE UNDER/EQUAL TO 16,000 LBS. |
+| 0964125C       | NO CITY STICKER VEHICLE OVER 16,000 LBS.           |
+| 0964125D       | IMPROPER DISPLAY OF CITY STICKER                   |
+
+I aggregated ticket data on only the numeric portion of violation codes and plotted any violations that were among the top 2 most ticketed violations in a given year.
+
+#### Disposition of Selected Violations
+![png](img/ticket_disposition.png)
 
 what options does the city have?
 where to send enforcement agents
@@ -35,8 +49,6 @@ what violations make the most money?
 
 
 5 figures + title slide (3 slides of eda. 2 slides of hypothesis testing)
-1 introduction to data set
-systematic sample
 
 2 overview of data set
 3 highest sources of revenue ytd 5/14/18 (parking data only) (top 5, then top 10 if time allows)
