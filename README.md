@@ -18,10 +18,12 @@ This section contains plots that demonstrate the types of information that can b
 
 #### Tickets Issued by Year and Fines Paid by Year
 ![png](img/tickets_by_year.png)
+
 This is a plot of the number of tickets issued by the City of Chicago and the total fines paid aggregated by year. It can be observed that although the number of tickets issued has declined since 2002, the revenue drawn by the city has been robust to that decline. I believe the low number of ticket issued before 2002 indicates a data completeness issue, where not all violations have ticket information dating as far back as 1996.
 
 #### Top Ticketed Violations by Year
 ![png](img/tickets_by_viol.png)
+
 Violations are coded alphanumerically by the City of Chicago, but some violation codes have been split into subcodes over time, like city sticker violations:
 
 | violation code |                violation description               |
