@@ -106,6 +106,7 @@ No fine increase
 02/23/13 (0.050), 02/23/15 (0.364)
 
 #### Conclusions
+![gif](make_it_rain_money.gif)
 The City of Chicago should raise fines to increase revenue, as drivers don't seem to be sensitive to price increases.
 
 ### Future Directions
