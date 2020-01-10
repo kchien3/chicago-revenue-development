@@ -16,8 +16,8 @@ The uncompressed csv containing the data is 19.6 GB and contains 54,430,547 reco
 ### Data Exploration
 This section contains plots that demonstrate the types of information that can be gleaned from this feature-rich data set.
 
-
-
+#### Tickets Issued by Year and Fines Paid by Year
+![png](img/tickets_by_year.png)
 what data do i have?
 speeding/red light tickets data (not used)
 parking/parked car violations (used)
