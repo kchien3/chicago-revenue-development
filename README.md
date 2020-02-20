@@ -11,7 +11,7 @@ Andrew Kin-Yip Chien
   * [Pipeline](#pipeline)
 * [Exploration](#exploration)
 * [Revenue Maximization Strategies](#revenue-maximization-strategies)
-* [Conclusions](#conclusion)
+* [Conclusions](#conclusions)
 * [Future Directions](#future-directions)
 * [References](#references)
 
