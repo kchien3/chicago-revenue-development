@@ -17,7 +17,9 @@ The uncompressed csv containing the data is 19.6 GB and contains 54,430,547 reco
 This section contains plots that demonstrate the types of information that can be gleaned from this feature-rich data set.
 
 #### Tickets Issued by Year and Fines Paid by Year
-![png](img/tickets_by_year.png)
+<p align="center">
+<img src="img/tickets_by_year.png">
+</p>
 
 This is a plot of the number of tickets issued by the City of Chicago and the total fines paid aggregated by year. It can be observed that although the number of tickets issued has declined since 2002, the revenue drawn by the city has been robust to that decline. I believe the low number of ticket issued before 2002 indicates a data completeness issue, where not all violations have ticket information dating as far back as 1996.
 
@@ -111,7 +113,7 @@ No fine increase
 02/19/07 (p-val: 0.819), 02/19/09 (p-val: 0.799)  
 02/23/13 (p-val: 0.050), 02/23/15 (p-val: 0.364)  
 
-For thoroughness, in case payment probability really did change after fine increases, corresponding 6-month windows for the previous and following year were examined. If payment probability increased (as determined by hypothesis testing), it could be due to the ticket increase or due to an exogenous factor, like a seasonal event. In this case, the conclusion of multiple hypothesis tests with Bonferonni corrections is that there are no significant changes in ticket payment probability, due to fine increases or otherwise (like seasonality.)
+For thoroughness, in case payment probability really did change after fine increases, corresponding 6-month windows for the previous and following year were examined. If payment probability increased (as determined by hypothesis testing), it could be due to the ticket increase or due to another factor, like a seasonal event. In this case, the conclusion of multiple hypothesis tests with Bonferonni corrections is that there are no significant changes in ticket payment probability, due to fine increases or otherwise (like seasonality.)
 
 #### Conclusions
 ![gif](img/make_it_rain_money.gif)  
