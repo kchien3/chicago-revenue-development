@@ -142,7 +142,7 @@ For thoroughness, in case payment probability really did change after fine incre
 <p align="center">
 <img src="img/make_it_rain_money.gif">
 </p>
-The City of Chicago should raise fines to increase revenue, as drivers don't seem to be sensitive to price increases.
+The City of Chicago should raise fines to increase revenue, as vehicle owners don't seem to be sensitive to price increases.
 
 ## Future Directions
 What other revenue generation options does the city have?  
