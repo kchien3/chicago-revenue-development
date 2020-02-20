@@ -3,19 +3,31 @@
 Andrew Kin-Yip Chien
 [Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](https://github.com/kchien3/chicago-ticket-project/blob/master/presentation/chicago_tickets_project_slides.pdf)
 
+## Table of Contents
+
+* [Background and Motivation](#background-and-motivation)
+* [Data](#data)
+  * [Description](#description)
+  * [Pipeline](#pipeline)
+* [Exploration](#exploration)
+* [Revenue Maximization Strategies](#revenue-maximization-strategies)
+* [Conclusions](#conclusion)
+* [Future Directions](#future-directions)
+* [References](#references)
 
 ### Background and Motivation
 The City of Chicago has a long history of corruption dating back over 150 years.(source) A 2019 report by the Illinois Policy Institute estimated that public corruption convictions cost the Illinois state economy $9.9 billion between 2000-2017, with further detrimental effects on economic competitiveness and growth. (source) In order to maintain its reputation as the most corrupt city in America, Chicago must explore ways to unlock the full potential of its municipal revenue streams.
 
-### Data Description
+### Data
+#### Description
 ProPublica, an investigative journalism organization, has compiled a data set of parking and vehicle compliance tickets issued in Chicago from January 1, 1996 to May 14, 2018. The same data are available from the City of Chicago through FOIA (Free of Information Act) requests. In addition to the 22 features provided by the City of Chicago, ProPublica also engineered 14 additional features containing geographic information about where the ticket was issued. ProPublica also compiled a data set of speeding and red light camera violation tickets in a separate csv but I did not use that data in this project.
 
 At a high level, the data set contains information about when, where, and by whom tickets were issued, hashed license plate numbers, vehicle makes, vehicle registration zipcodes, the violation for which the vehicle was cited, payment status and more.
 
-### Data Pipeline
+#### Pipeline
 The uncompressed csv containing the data is 19.6 GB and contains 54,430,547 records, far too large to load completely into a single computer's memory. I used Unix commands to systematically sample every 25th record, producing a subset containing 2,177,221 records that consumed 650 MB in memory. The pandas software library was used to examine, plot and analyze this subset of data.
 
-### Data Exploration
+### Exploration
 This section contains plots that demonstrate the types of information that can be gleaned from this feature-rich data set.
 
 #### Tickets Issued by Year and Fines Paid by Year
@@ -127,7 +139,7 @@ No fine increase
 
 For thoroughness, in case payment probability really did change after fine increases, corresponding 6-month windows for the previous and following year were examined. If payment probability increased (as determined by hypothesis testing), it could be due to the ticket increase or due to another factor, like a seasonal event. In this case, the conclusion of multiple hypothesis tests with Bonferonni corrections is that there are no significant changes in ticket payment probability, due to fine increases or otherwise (like seasonality.)
 
-#### Conclusions
+### Conclusions
 <p align="center">
 <img src="img/make_it_rain_money.gif">
 </p>
