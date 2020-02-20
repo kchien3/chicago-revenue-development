@@ -16,29 +16,29 @@
 * [Future Directions](#future-directions)
 * [References](#references)
 
-### Background and Motivation
+## Background and Motivation
 The City of Chicago has a [long history](https://pols.uic.edu/wp-content/uploads/sites/273/2018/10/cpl_continuingcorruptioinillinois.pdf) of corruption dating back over 150 years. A 2019 [report](http://noeldjohnson.net/noeldjohnson.net/Research_files/Corruption%20Is%20Bad%20For%20Growth.pdf) by the Illinois Policy Institute estimated that public corruption convictions cost the Illinois state economy $9.9 billion between 2000-2017, with further detrimental effects on economic competitiveness and growth.  In order to maintain its reputation as the most corrupt city in America, Chicago must explore ways to unlock the full potential of its municipal revenue streams.
 
-### Data
-#### Description
+## Data
+### Description
 ProPublica, an investigative journalism organization, has compiled a [dataset](https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data) of parking and vehicle compliance tickets issued in Chicago from January 1, 1996 to May 14, 2018. The same data are available from the City of Chicago through FOIA (Free of Information Act) requests. In addition to the 22 features provided by the City of Chicago, ProPublica also engineered 14 additional features containing geographic information about where the ticket was issued. ProPublica also compiled a data set of speeding and red light camera violation tickets in a separate csv but I did not use that data in this project.
 
 At a high level, the data set contains information about when, where, and by whom tickets were issued, hashed license plate numbers, vehicle makes, vehicle registration zipcodes, the violation for which the vehicle was cited, payment status and more.
 
-#### Pipeline
+### Pipeline
 The uncompressed csv containing the data is 19.6 GB and contains 54,430,547 records, far too large to load completely into a single computer's memory. I used Unix commands to systematically sample every 25th record, producing a subset containing 2,177,221 records that consumed 650 MB in memory. The pandas software library was used to examine, plot and analyze this subset of data.
 
-### Exploration
+## Exploration
 This section contains plots that demonstrate the types of information that can be gleaned from this feature-rich data set.
 
-#### Tickets Issued by Year and Fines Paid by Year
+### Tickets Issued by Year and Fines Paid by Year
 <p align="center">
 <img src="img/tickets_by_year.png">
 </p>
 
 This is a plot of the number of tickets issued by the City of Chicago and the total fines paid aggregated by year. It can be observed that although the number of tickets issued has declined since 2002, the revenue drawn by the city has been robust to that decline. I believe the low number of ticket issued before 2002 indicates a data completeness issue, where not all violations have ticket information dating as far back as 1996.
 
-#### Top Ticketed Violations by Year
+### Top Ticketed Violations by Year
 <p align="center">
 <img src="img/tickets_by_viol.png">
 </p>
@@ -54,7 +54,7 @@ Violations are coded alphanumerically by the City of Chicago, but some violation
 | 0964125C       | NO CITY STICKER VEHICLE OVER 16,000 LBS.           |
 | 0964125D       | IMPROPER DISPLAY OF CITY STICKER                   |
 
-#### Violations Generating the Most Revenue (FY 2017)
+### Violations Generating the Most Revenue (FY 2017)
 
 |   Code   |               Violation Description               | FY2017 Revenue |
 |:--------:|:-------------------------------------------------:|:--------------:|
@@ -66,14 +66,14 @@ Violations are coded alphanumerically by the City of Chicago, but some violation
 
 The City of Chicago fiscal year runs from Jan 1 to Dec 31. The 5 violation codes generating the most revenue for FY 2017, the last complete year in the data set, are listed above. This ranking does not perfectly match the violations generating the most tickets because fines differ for each violation.
 
-#### Disposition of Selected Violations
+### Disposition of Selected Violations
 <p align="center">
 <img src="img/ticket_disposition.png">
 </p>
 
 Aside from information about whether a ticket was paid or unpaid, other ticket outcomes were also included in the data set. For example, some tickets were dismissed, awaiting a hearing, or in bankruptcy. I binned tickets into paid, unpaid, and dismissed categories, in order to visualize the efficiency of the ticketing process. A violation that is unpaid or dismissed generates no revenue for the city. For reasons that require further exploration of the data, street cleaning tickets are paid less often than city sticker and license plate violation tickets.
 
-#### Table View of Individual Vehicle
+### Table View of Individual Vehicle
 
 |      issue date     |          geocoded address         |           violation description          | license plate_type | current amount_due | total payments |
 |:-------------------:|:---------------------------------:|:----------------------------------------:|:------------------:|:------------------:|:--------------:|
@@ -85,7 +85,7 @@ Aside from information about whether a ticket was paid or unpaid, other ticket o
 
 Using the hashed license plate numbers, a Chevy truck incurring 53 violations in the data subset was identified. The first 5 violations are shown in the view above. The license plate type corresponds to a commercial truck except in the second row, where the license plate was incorrectly identified as a passenger vehicle. The data set is full of inconsistencies and data entry errors, and I only endeavored to clean features where inconsistencies affected large proportions of values.
 
-### Revenue Maximization Strategies
+## Revenue Maximization Strategies
 <p align="center">
 <img src="img/homer_devil.gif">
 </p>
@@ -94,7 +94,7 @@ I originally hoped to follow in the footsteps of ProPublica and examine how fine
 
 Absent external demographic information, I rescoped and determined that I could use the data at hand to investigate the levers the City of Chicago had access to to raise revenues.
 
-#### Hypothesis Testing
+### Hypothesis Testing
 <p align="center">
 <img src="img/ticket_payprob_and_price.png">
 </p>
@@ -103,16 +103,16 @@ Because the data span 22 years, it can be observed that fines for various violat
 
 (Note: Level 1 fines are issued for violations, and level 2 fines are issued for continued noncompliance and/or unpaid tickets.)
 
-#####  Difference in Proportions Test Review
+####  Difference in Proportions Test Review
 <p align="center">
 <img src="img/CodeCogsEqn.gif">
 </p>
 
-##### Results
+### Results
 A six month window of records before and after a fine increase produced two samples for hypothesis testing. Some results follow:
 (The p-value for a one-sided difference in proportion of tickets paid test between tickets issued before and after a price increase are shown)
 
-###### Rush Hour Parking
+#### Rush Hour Parking
 Rush hour parking level 1 fine increased:  
 $30 > $50 (+67%) on 02/02/00 (p-val: 0.336)  
 $50 > $60 (+20%) on 02/19/08 (p-val: 0.345)  
@@ -140,19 +140,19 @@ No fine increase
 
 For thoroughness, in case payment probability really did change after fine increases, corresponding 6-month windows for the previous and following year were examined. If payment probability increased (as determined by hypothesis testing), it could be due to the ticket increase or due to another factor, like a seasonal event. In this case, the conclusion of multiple hypothesis tests with Bonferonni corrections is that there are no significant changes in ticket payment probability, due to fine increases or otherwise (like seasonality.)
 
-### Conclusions
+## Conclusions
 <p align="center">
 <img src="img/make_it_rain_money.gif">
 </p>
 The City of Chicago should raise fines to increase revenue, as drivers don't seem to be sensitive to price increases.
 
-### Future Directions
+## Future Directions
 What other revenue generation options does the city have?  
 Where should the city send enforcement agents to maximize revenue?  
 Which enforcement departments generate the most tickets? Which officers write the most tickets and can their location be plotted over the course of a day?  
 Which violations burden poor minorities?  
 What is the violation burden in areas with a lot of political fundraising?  
 
-### References
+## References
 * Simpson, D., Gradel, T.J., Rossi, M.R, & Taylor, K. Continuing Corruption in Illinois: Anti-Corruption Report #10. (2018) https://pols.uic.edu/wp-content/uploads/sites/273/2018/10/cpl_continuingcorruptioinillinois.pdf
 * Johnson, N.D., LaFountain, C.L. & Yamarik, S. Corruption is bad for growth (even in the United States). Public Choice 147, 377–393 (2011) http://noeldjohnson.net/noeldjohnson.net/Research_files/Corruption%20Is%20Bad%20For%20Growth.pdf
