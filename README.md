@@ -86,24 +86,24 @@ A six month window of records before and after a fine increase produced two samp
 (The p-value for a one-sided difference in proportions test between tickets issued before and after a price increase are shown)
 
 ###### Rush Hour Parking
-Rush hour parking level 1 fine increased:
-$30 > $50 (+67%) on 02/02/00 (p-val: 0.336)
-$50 > $60 (+20%) on 02/19/08 (p-val: 0.345)
-$60 > $100 (+67%) on 02/23/14 (p-val: 0.964)
+Rush hour parking level 1 fine increased:  
+$30 > $50 (+67%) on 02/02/00 (p-val: 0.336)  
+$50 > $60 (+20%) on 02/19/08 (p-val: 0.345)  
+$60 > $100 (+67%) on 02/23/14 (p-val: 0.964)  
 
 Conclusion:
 Rush hour parking fines were increased 3 times and a difference in proportions test was performed in the leading and trailing 6 months around the event. There was not enough evidence to reject the null hypothesis that raising ticket fines does not affect payment probability.
 
 (to do)
-Rush hour parking level 2 fine increased
-$60 > $100 (+67%) on 02/02/00 (p-val: 0.997)
-$100 > $120 (+20%) on 02/19/08 (p-val: 0.588)
-$120 > $200 (+67%) on 02/23/14 (p-val: 0.007)
+Rush hour parking level 2 fine increased  
+$60 > $100 (+67%) on 02/02/00 (p-val: 0.997)  
+$100 > $120 (+20%) on 02/19/08 (p-val: 0.588)  
+$120 > $200 (+67%) on 02/23/14 (p-val: 0.007)  
 
-No fine increase
-02/02/00 (0.782), 02/02/01 (0.630)
-02/19/07 (0.819), 02/19/09 (0.799)
-02/23/13 (0.050), 02/23/15 (0.364)
+No fine increase  
+02/02/00 (0.782), 02/02/01 (0.630)  
+02/19/07 (0.819), 02/19/09 (0.799)  
+02/23/13 (0.050), 02/23/15 (0.364)  
 
 #### Conclusions
 ![gif](make_it_rain_money.gif)
