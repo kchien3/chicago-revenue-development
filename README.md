@@ -20,7 +20,7 @@ The City of Chicago has a long history of corruption dating back over 150 years.
 
 ### Data
 #### Description
-ProPublica, an investigative journalism organization, has compiled a data set of parking and vehicle compliance tickets issued in Chicago from January 1, 1996 to May 14, 2018. The same data are available from the City of Chicago through FOIA (Free of Information Act) requests. In addition to the 22 features provided by the City of Chicago, ProPublica also engineered 14 additional features containing geographic information about where the ticket was issued. ProPublica also compiled a data set of speeding and red light camera violation tickets in a separate csv but I did not use that data in this project.
+ProPublica, an investigative journalism organization, has compiled a [dataset](https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data) of parking and vehicle compliance tickets issued in Chicago from January 1, 1996 to May 14, 2018. The same data are available from the City of Chicago through FOIA (Free of Information Act) requests. In addition to the 22 features provided by the City of Chicago, ProPublica also engineered 14 additional features containing geographic information about where the ticket was issued. ProPublica also compiled a data set of speeding and red light camera violation tickets in a separate csv but I did not use that data in this project.
 
 At a high level, the data set contains information about when, where, and by whom tickets were issued, hashed license plate numbers, vehicle makes, vehicle registration zipcodes, the violation for which the vehicle was cited, payment status and more.
 
