@@ -1,6 +1,9 @@
 # City of Chicago Parking Tickets
 ## Data Exploration and Revenue Development Strategies
-
+Andrew Kin-Yip Chien
+\
+[Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3)
+\
 
 ### Background and Motivation
 The City of Chicago has a long history of corruption dating back over 150 years.(source) A 2019 report by the Illinois Policy Institute estimated that public corruption convictions cost the Illinois state economy $9.9 billion between 2000-2017, with further detrimental effects on economic competitiveness and growth. (source) In order to maintain its reputation as the most corrupt city in America, Chicago must explore ways to unlock the full potential of its municipal revenue streams.
