@@ -114,17 +114,15 @@ No fine increase
 For thoroughness, in case payment probability really did change after fine increases, corresponding 6-month windows for the previous and following year were examined. If payment probability increased (as determined by hypothesis testing), it could be due to the ticket increase or due to an exogenous factor, like a seasonal event. In this case, the conclusion of multiple hypothesis tests with Bonferonni corrections is that there are no significant changes in ticket payment probability, due to fine increases or otherwise (like seasonality.)
 
 #### Conclusions
-![gif](img/make_it_rain_money.gif)
+![gif](img/make_it_rain_money.gif)  
 The City of Chicago should raise fines to increase revenue, as drivers don't seem to be sensitive to price increases.
 
 ### Future Directions
-what options does the city have?
-where to send enforcement agents
-7 which non law enforcement departments perform well? show individual officer data.
-(can compare the ticket writing numbers for different officers)
-(can plot the area an officer works)
-(maybe can measure the performance of different agencies)
-6 which violations burden non-poor minorities (in areas without a lot of political fundraising too)
+What other revenue generation options does the city have?
+Where should the city send enforcement agents to maximize revenue?
+Which enforcement departments generate the most tickets? Which officers write the most tickets and can their location be plotted over the course of a day?
+Which violations burden poor minorities? 
+What is the violation burden in areas with a lot of political fundraising?
 
 ### References
 
