@@ -24,6 +24,8 @@ This is a plot of the number of tickets issued by the City of Chicago and the to
 #### Top Ticketed Violations by Year
 ![png](img/tickets_by_viol.png)
 
+I aggregated ticket data on only the numeric portion of violation codes and plotted any violations that were among the top 2 most ticketed violations in a given year.
+
 Violations are coded alphanumerically by the City of Chicago, but some violation codes have been split into subcodes over time, like city sticker violations:
 
 | violation code |                violation description               |
@@ -32,8 +34,6 @@ Violations are coded alphanumerically by the City of Chicago, but some violation
 | 0964125B       | NO CITY STICKER VEHICLE UNDER/EQUAL TO 16,000 LBS. |
 | 0964125C       | NO CITY STICKER VEHICLE OVER 16,000 LBS.           |
 | 0964125D       | IMPROPER DISPLAY OF CITY STICKER                   |
-
-I aggregated ticket data on only the numeric portion of violation codes and plotted any violations that were among the top 2 most ticketed violations in a given year.
 
 #### Violations Generating the Most Revenue (FY 2017)
 
