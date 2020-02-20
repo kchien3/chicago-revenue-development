@@ -94,19 +94,27 @@ $60 > $100 (+67%) on 02/23/14 (p-val: 0.964)
 Conclusion:
 Rush hour parking fines were increased 3 times and a difference in proportions test was performed in the leading and trailing 6 months around the event. There was not enough evidence to reject the null hypothesis that raising ticket fines does not affect payment probability.
 
-(to do)
+
 Rush hour parking level 2 fine increased  
 $60 > $100 (+67%) on 02/02/00 (p-val: 0.997)  
 $100 > $120 (+20%) on 02/19/08 (p-val: 0.588)  
 $120 > $200 (+67%) on 02/23/14 (p-val: 0.007)  
 
+Conclusion:
+Rush hour level 2 parking fines were increased 3 times and a difference in proportions test was performed in the leading and trailing 6 months around the event. Although the p-value of the test was significant for the third fine increase from $120 to $200, 6 hypothesis tests have been performed at this point and a correction must be made for multiple testing in order to keep the family-wise error rate below 0.05. The Bonferroni corrected significance level becomes 0.05/6 = 0.00833, rendering all the p-values insignificant.
+
+Even disregarding the Bonferonni correction, which is a strong correction when performing a large number of tests, the weight of the evidence from multiple hypothesis tests is that increasing ticket fines doesn't seem to decrease the probability of payment.
+
+
 No fine increase  
-02/02/00 (0.782), 02/02/01 (0.630)  
-02/19/07 (0.819), 02/19/09 (0.799)  
-02/23/13 (0.050), 02/23/15 (0.364)  
+02/02/99 (p-val: 0.782), 02/02/01 (p-val: 0.630)  
+02/19/07 (p-val: 0.819), 02/19/09 (p-val: 0.799)  
+02/23/13 (p-val: 0.050), 02/23/15 (p-val: 0.364)  
+
+For thoroughness, in case payment probability really did change after fine increases, corresponding 6-month windows for the previous and following year were examined. If payment probability increased (as determined by hypothesis testing), it could be due to the ticket increase or due to an exogenous factor, like a seasonal event. In this case, the conclusion of multiple hypothesis tests with Bonferonni corrections is that there are no significant changes in ticket payment probability, due to fine increases or otherwise (like seasonality.)
 
 #### Conclusions
-![gif](make_it_rain_money.gif)
+![gif](img/make_it_rain_money.gif)
 The City of Chicago should raise fines to increase revenue, as drivers don't seem to be sensitive to price increases.
 
 ### Future Directions
