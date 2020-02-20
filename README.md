@@ -1,6 +1,7 @@
 # City of Chicago Parking Tickets
-## Data Exploration and Revenue Development Strategies
-Andrew Kin-Yip Chien
+**Data Exploration and Revenue Development Strategies**
+
+## Andrew Kin-Yip Chien
 [Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](https://github.com/kchien3/chicago-ticket-project/blob/master/presentation/chicago_tickets_project_slides.pdf)
 
 ## Table of Contents
@@ -16,7 +17,7 @@ Andrew Kin-Yip Chien
 * [References](#references)
 
 ### Background and Motivation
-The City of Chicago has a long history of corruption dating back over 150 years.(source) A 2019 report by the Illinois Policy Institute estimated that public corruption convictions cost the Illinois state economy $9.9 billion between 2000-2017, with further detrimental effects on economic competitiveness and growth. (source) In order to maintain its reputation as the most corrupt city in America, Chicago must explore ways to unlock the full potential of its municipal revenue streams.
+[The City of Chicago has a long history of corruption dating back over 150 years.](https://pols.uic.edu/wp-content/uploads/sites/273/2018/10/cpl_continuingcorruptioinillinois.pdf) [A 2019 report by the Illinois Policy Institute estimated that public corruption convictions cost the Illinois state economy $9.9 billion between 2000-2017, with further detrimental effects on economic competitiveness and growth.](http://noeldjohnson.net/noeldjohnson.net/Research_files/Corruption%20Is%20Bad%20For%20Growth.pdf)  In order to maintain its reputation as the most corrupt city in America, Chicago must explore ways to unlock the full potential of its municipal revenue streams.
 
 ### Data
 #### Description
@@ -153,5 +154,5 @@ Which violations burden poor minorities?
 What is the violation burden in areas with a lot of political fundraising?  
 
 ### References
-
-(to do)
+* Simpson, D., Gradel, T.J., Rossi, M.R, & Taylor, K. Continuing Corruption in Illinois: Anti-Corruption Report #10. (2018) https://pols.uic.edu/wp-content/uploads/sites/273/2018/10/cpl_continuingcorruptioinillinois.pdf
+* Johnson, N.D., LaFountain, C.L. & Yamarik, S. Corruption is bad for growth (even in the United States). Public Choice 147, 377–393 (2011) http://noeldjohnson.net/noeldjohnson.net/Research_files/Corruption%20Is%20Bad%20For%20Growth.pdf
