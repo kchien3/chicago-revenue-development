@@ -17,7 +17,7 @@
 * [References](#references)
 
 ### Background and Motivation
-[The City of Chicago has a long history of corruption dating back over 150 years.](https://pols.uic.edu/wp-content/uploads/sites/273/2018/10/cpl_continuingcorruptioinillinois.pdf) [A 2019 report by the Illinois Policy Institute estimated that public corruption convictions cost the Illinois state economy $9.9 billion between 2000-2017, with further detrimental effects on economic competitiveness and growth.](http://noeldjohnson.net/noeldjohnson.net/Research_files/Corruption%20Is%20Bad%20For%20Growth.pdf)  In order to maintain its reputation as the most corrupt city in America, Chicago must explore ways to unlock the full potential of its municipal revenue streams.
+The City of Chicago has a [long history](https://pols.uic.edu/wp-content/uploads/sites/273/2018/10/cpl_continuingcorruptioinillinois.pdf) of corruption dating back over 150 years. A 2019 [report](http://noeldjohnson.net/noeldjohnson.net/Research_files/Corruption%20Is%20Bad%20For%20Growth.pdf) by the Illinois Policy Institute estimated that public corruption convictions cost the Illinois state economy $9.9 billion between 2000-2017, with further detrimental effects on economic competitiveness and growth.  In order to maintain its reputation as the most corrupt city in America, Chicago must explore ways to unlock the full potential of its municipal revenue streams.
 
 ### Data
 #### Description
