@@ -121,7 +121,7 @@ $60 > $100 (+67%) on 02/23/14 (p-val: 0.964)
 Conclusion:
 Rush hour parking fines were increased 3 times and a difference in proportions test was performed in the leading and trailing 6 months around the event. There was not enough evidence to reject the null hypothesis that raising ticket fines does not affect payment probability.
 
-
+<br/><br/>
 Rush hour parking level 2 fine increased  
 $60 > $100 (+67%) on 02/02/00 (p-val: 0.997)  
 $100 > $120 (+20%) on 02/19/08 (p-val: 0.588)  
@@ -132,7 +132,7 @@ Rush hour level 2 parking fines were increased 3 times and a difference in propo
 
 Even disregarding the Bonferonni correction, which is a strong correction when performing a large number of tests, the weight of the evidence from multiple hypothesis tests is that increasing ticket fines doesn't seem to decrease the probability of payment.
 
-
+<br/><br/>
 No fine increase  
 02/02/99 (p-val: 0.782), 02/02/01 (p-val: 0.630)  
 02/19/07 (p-val: 0.819), 02/19/09 (p-val: 0.799)  
