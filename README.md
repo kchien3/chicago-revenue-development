@@ -83,7 +83,7 @@ Because the data span 22 years, it can be observed that fines for various violat
 
 ##### Results
 A six month window of records before and after a fine increase produced two samples for hypothesis testing. Some results follow:
-(The p-value for a one-sided difference in proportions test between tickets issued before and after a price increase are shown)
+(The p-value for a one-sided difference in proportion of tickets paid test between tickets issued before and after a price increase are shown)
 
 ###### Rush Hour Parking
 Rush hour parking level 1 fine increased:  
