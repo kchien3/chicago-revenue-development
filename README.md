@@ -12,6 +12,7 @@
   * [Pipeline](#pipeline)
 * [Exploration](#exploration)
 * [Revenue Maximization Strategies](#revenue-maximization-strategies)
+  * [Raising Fines](#raising-fines)
 * [Conclusions](#conclusions)
 * [Future Directions](#future-directions)
 * [References](#references)
@@ -94,7 +95,7 @@ I originally hoped to follow in the footsteps of ProPublica and examine how fine
 
 Absent external demographic information, I rescoped and determined that I could use the data at hand to investigate the levers the City of Chicago had access to to raise revenues.
 
-### Hypothesis Testing
+### Raising Fines
 <p align="center">
 <img src="img/ticket_payprob_and_price.png">
 </p>
@@ -103,16 +104,16 @@ Because the data span 22 years, it can be observed that fines for various violat
 
 (Note: Level 1 fines are issued for violations, and level 2 fines are issued for continued noncompliance and/or unpaid tickets.)
 
-####  Difference in Proportions Test Review
+####  Difference in Proportions Test
 <p align="center">
 <img src="img/CodeCogsEqn.gif">
 </p>
 
-### Results
+#### Results
 A six month window of records before and after a fine increase produced two samples for hypothesis testing. Some results follow:
 (The p-value for a one-sided difference in proportion of tickets paid test between tickets issued before and after a price increase are shown)
 
-#### Rush Hour Parking
+##### Rush Hour Parking
 * Rush hour parking level 1 fine increased:  
 $30 > $50 (+67%) on 02/02/00 (p-val: 0.336)  
 $50 > $60 (+20%) on 02/19/08 (p-val: 0.345)  
