@@ -44,7 +44,7 @@ This is a plot of the number of tickets issued by the City of Chicago and the to
 <img src="img/tickets_by_viol.png">
 </div>
 
-I aggregated ticket data on only the numeric portion of violation codes and plotted any violations that were among the top 2 most ticketed violations in a given year.
+Violation codes contain a numeric stem and optionally an alphabetic sub-grouping. I aggregated ticket data on only the numeric portion to capture broad violation categories and plotted those that were among the top 2 most ticketed violations in a given year.
 
 Violations are coded alphanumerically by the City of Chicago, but some violation codes have been split into subcodes over time, like city sticker violations:
 
