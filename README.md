@@ -92,7 +92,7 @@ Using the hashed license plate numbers, a Chevy truck incurring 53 violations in
 <img src="img/homer_devil.gif">
 </div>
 
-I had hoped to examine the demographics of neighborhoods where the most tickets are issued, but big data presents different headaches than small data. The US Census Bureau has massive amounts of demographic information, like race and household income, but I have not been able to find the exact data set laid out in the right format to ease merging operations. This will be a direction for future analysis.
+I had hoped to follow in the footsteps of ProPublica, the investigative journalism organization that compiled this data set, to examine inequities in ticket issuance (e.g., answering the question of whether issuance disproportionately affects different segments of Chicago society) using demographic data from the US Census Bureau, but big data presents different headaches than small data. The Census Bureau has massive amounts of demographic information, like race and household income, but I have not been able to find the exact data set laid out in the right format to ease merging operations. This will be a direction for future analysis.
 
 Absent external demographic information, I rescoped and determined that I could use the data at hand to investigate the levers the City of Chicago had access to to raise revenues.
 
