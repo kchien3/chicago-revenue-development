@@ -73,7 +73,7 @@ The City of Chicago fiscal year runs from Jan 1 to Dec 31. The 5 violation codes
 <img src="img/ticket_disposition.png">
 </div>
 
-Aside from information about whether a ticket was paid or unpaid, other ticket outcomes were also included in the data set. For example, some tickets were dismissed, awaiting a hearing, or in bankruptcy. I binned tickets into paid, unpaid, and dismissed categories, in order to visualize the efficiency of the ticketing process. A violation that is unpaid or dismissed generates no revenue for the city. For reasons that require further exploration of the data, street cleaning tickets are paid less often than city sticker and license plate violation tickets.
+Aside from information about whether a ticket was paid or unpaid, other ticket outcomes were also included in the data set. For example, some tickets were dismissed, awaiting a hearing, or in bankruptcy. I binned tickets into paid, unpaid, and dismissed categories, in order to visualize the efficiency of the ticketing process. A violation that is unpaid or dismissed generates no revenue for the city. It can be seen that street cleaning tickets are paid less often than city sticker and license plate violation tickets, but further investigation is required to determine the reason for the trend.
 
 ### Table View of Individual Vehicle
 
