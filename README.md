@@ -37,15 +37,9 @@ This section contains plots that demonstrate the types of information that can b
 <img src="img/tickets_by_year.png">
 </div>
 
-This is a plot of the number of tickets issued by the City of Chicago and the total fines paid aggregated by year. It can be observed that although the number of tickets issued has declined since 2002, the revenue drawn by the city has been robust to that decline. I believe the low number of ticket issued before 2002 indicates a data completeness issue, where not all violations have ticket information dating as far back as 1996.
+This is a plot of the number of tickets issued by the City of Chicago and the total fines paid aggregated by year. It can be observed that although the number of tickets issued has declined since 2002, the revenue drawn by the city has been robust to that decline. I believe the low number of ticket issued before 2002 indicates a data completeness issue, where not all violations have ticket information dating as far back as 1996.  
 
-### Top Ticketed Violations by Year
-<div align="center">
-<img src="img/tickets_by_viol.png">
-</div>
-
-Violation codes contain a numeric stem and optionally an alphabetic sub-grouping. I aggregated ticket data on only the numeric portion to capture broad violation categories and plotted those that were among the top 2 most ticketed violations in a given year.
-
+### Violation Codes
 Violations are coded alphanumerically by the City of Chicago, but some violation codes have been split into subcodes over time, like city sticker violations:
 
 | violation code |                violation description               |
@@ -54,6 +48,13 @@ Violations are coded alphanumerically by the City of Chicago, but some violation
 | 0964125B       | NO CITY STICKER VEHICLE UNDER/EQUAL TO 16,000 LBS. |
 | 0964125C       | NO CITY STICKER VEHICLE OVER 16,000 LBS.           |
 | 0964125D       | IMPROPER DISPLAY OF CITY STICKER                   |
+
+### Top Ticketed Violations by Year
+<div align="center">
+<img src="img/tickets_by_viol.png">
+</div>
+
+Violation codes contain a numeric stem and optionally an alphabetic sub-grouping. I aggregated ticket data on only the numeric portion to capture broad violation categories and plotted those that were among the top 2 most ticketed violations in a given year.
 
 ### Violations Generating the Most Revenue (FY 2017)
 
