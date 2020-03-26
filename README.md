@@ -147,12 +147,12 @@ For thoroughness, in case payment probability really did change after fine incre
 The City of Chicago should raise fines to increase revenue, as vehicle owners don't seem to be sensitive to price increases.
 
 ## Future Directions
-What other revenue generation options does the city have?  
-Where should the city send enforcement agents to maximize revenue?  
-Which enforcement departments generate the most tickets?  
-Which officers write the most tickets and can their location be plotted over the course of a day?  
-Which violations burden poor minorities?  
-What is the violation burden in areas with a lot of political fundraising?  
+* What other revenue generation options does the city have?  
+* Where should the city send enforcement agents to maximize revenue?  
+* Which enforcement departments generate the most tickets?  
+* Which officers write the most tickets and can their location be plotted over the course of a day?  
+* Which violations burden poor minorities?  
+* What is the violation burden in areas with a lot of political fundraising?  
 
 ## References
 * Simpson, D., Gradel, T.J., Rossi, M.R, & Taylor, K. Continuing Corruption in Illinois: Anti-Corruption Report #10. (2018) https://pols.uic.edu/wp-content/uploads/sites/273/2018/10/cpl_continuingcorruptioinillinois.pdf
