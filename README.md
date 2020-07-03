@@ -1,7 +1,7 @@
 # City of Chicago Parking Tickets
 **Data Exploration and Revenue Development Strategies**
 
-## Andrew Kin-Yip Chien
+## Kin-Yip Chien
 [Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](/presentation/chicago_tickets_project_slides.pdf)
 
 ## Table of Contents
