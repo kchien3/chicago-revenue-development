@@ -6,7 +6,7 @@
 **Data Exploration and Revenue Development Strategies**
 
 ## Kin-Yip Chien
-[Linkedin](https://www.linkedin.com/in/kinyip-chien/) | [Github](https://github.com/kchien3) | [Slides](/presentation/chicago_tickets_project_slides.pdf)
+[Linkedin](https://www.linkedin.com/in/kinyip-chien/) | [Github](https://github.com/kinyipchien) | [Slides](/presentation/chicago_tickets_project_slides.pdf)
 
 ## Table of Contents
 
