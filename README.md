@@ -1,6 +1,7 @@
 <div align="center">
 <img src="img/20180727-chicago-tickets-retouched_gray-1200x630.jpg">
 </div>
+
 # City of Chicago Vehicle Violations
 **Data Exploration and Revenue Development Strategies**
 
