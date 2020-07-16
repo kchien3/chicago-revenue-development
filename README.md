@@ -1,4 +1,4 @@
-# City of Chicago Parking Tickets
+# City of Chicago Vehicle Violations
 **Data Exploration and Revenue Development Strategies**
 
 ## Kin-Yip Chien
