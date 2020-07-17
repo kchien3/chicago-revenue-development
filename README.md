@@ -1,6 +1,4 @@
-<div align="center">
-<img src="img/chicago-tickets-1200x630.jpg">
-</div>
+![chicago tickets](img/chicago-tickets-1200x630.jpg)
 
 # City of Chicago Vehicle Violations
 **Data Exploration and Revenue Development Strategies**
