@@ -35,9 +35,7 @@ The uncompressed csv containing the data is 19.6 GB and contains 54,430,547 reco
 This section contains plots that demonstrate the types of information that can be gleaned from this feature-rich data set.
 
 ### Tickets Issued by Year and Fines Paid by Year
-<div align="center">
-<img src="img/tickets_by_year.png">
-</div>
+![tickets by year](img/tickets_by_year.png)
 
 This is a plot of the number of tickets issued by the City of Chicago and the total fines paid aggregated by year. It can be observed that although the number of tickets issued has declined since 2002, the revenue drawn by the city has been robust to that decline. I believe the low number of ticket issued before 2002 indicates a data completeness issue, where not all violations have ticket information dating as far back as 1996.  
 
@@ -52,9 +50,7 @@ Violations are coded alphanumerically by the City of Chicago, but some violation
 | 0964125D       | IMPROPER DISPLAY OF CITY STICKER                   |
 
 ### Top Ticketed Violations by Year
-<div align="center">
-<img src="img/tickets_by_viol.png">
-</div>
+![tickets by violation](img/tickets_by_viol.png)
 
 Violation codes contain a numeric stem and optionally an alphabetic sub-grouping. I aggregated ticket data on only the numeric portion to capture broad violation categories and plotted those that were among the top 2 most ticketed violations in a given year.
 
@@ -71,9 +67,7 @@ Violation codes contain a numeric stem and optionally an alphabetic sub-grouping
 The City of Chicago fiscal year runs from Jan 1 to Dec 31. The 5 violation codes generating the most revenue for FY 2017, the last complete year in the data set, are listed above. This ranking does not perfectly match the violations generating the most tickets because fines differ for each violation.
 
 ### Disposition of Selected Violations
-<div align="center">
-<img src="img/ticket_disposition.png">
-</div>
+![ticket disposition](img/ticket_disposition.png)
 
 Aside from information about whether a ticket was paid or unpaid, other ticket outcomes were also included in the data set. For example, some tickets were dismissed, awaiting a hearing, or in bankruptcy. I binned tickets into paid, unpaid, and dismissed categories, in order to visualize the efficiency of the ticketing process. A violation that is unpaid or dismissed generates no revenue for the city. It can be seen that street cleaning tickets are paid less often than city sticker and license plate violation tickets, but further investigation is required to determine the reason for the trend.
 
@@ -90,27 +84,21 @@ Aside from information about whether a ticket was paid or unpaid, other ticket o
 Using the hashed license plate numbers, a Chevy truck incurring 53 violations in the data subset was identified. The first 5 violations are shown in the view above. The license plate type corresponds to a commercial truck except in the second row, where the license plate was incorrectly identified as a passenger vehicle. The data set is full of inconsistencies and data entry errors, and I only endeavored to clean features where inconsistencies affected large proportions of values.
 
 ## Revenue Maximization Strategies
-<div align="center">
-<img src="img/homer_devil.gif">
-</div>
+![homer devil](img/homer_devil.gif)
 
 I had hoped to follow in the footsteps of ProPublica, the investigative journalism organization that compiled this data set, to examine inequities in ticket issuance (e.g., answering the question of whether issuance disproportionately affects different segments of Chicago society) using demographic data from the US Census Bureau, but big data presents different headaches than small data. The Census Bureau has massive amounts of demographic information, like race and household income, but I have not been able to find the exact data set laid out in the right format to ease merging operations. This will be a direction for future analysis.
 
 Absent external demographic information, I rescoped and determined that I could use the data at hand to investigate the levers the City of Chicago had access to to raise revenues.
 
 ### Raising Fines
-<div align="center">
-<img src="img/ticket_payprob_and_price.png">
-</div>
+![ticket payment prob and price](img/ticket_payprob_and_price.png)
 
 Because the data span 22 years, it can be observed that fines for various violations have increased over time, while some violation fines have remained constant. Information can also be generated about the proportion of tickets that have been paid over windows of time. The plot above focuses on violations for Rush Hour Parking. The cumulative proportion of tickets paid and the level 1 fine amount are shown. I wanted to explore whether raising fines decreased the probability of violators paying. This can be detected by a change in the slope of the cumulative probability line (blue), but because there are so many observations, it is not possible to visually detect effects. A rolling window of probabilities would be a future visualization goal.
 
 (Note: Level 1 fines are issued for violations, and level 2 fines are issued for continued noncompliance and/or unpaid tickets.)
 
 ####  Difference in Proportions Test
-<div align="center">
-<img src="img/CodeCogsEqn.gif">
-</div>
+![CodeCogs equation](img/CodeCogsEqn.gif)
 
 #### Results
 A six month window of records before and after a fine increase produced two samples for hypothesis testing. Some results follow:
@@ -143,9 +131,8 @@ Even disregarding the Bonferonni correction, which is a strong correction when p
 For thoroughness, in case payment probability really did change after fine increases, corresponding 6-month windows for the previous and following year were examined. If payment probability increased (as determined by hypothesis testing), it could be due to the ticket increase or due to another factor, like a seasonal event. In this case, the conclusion of multiple hypothesis tests with Bonferonni corrections is that there are no significant changes in ticket payment probability, due to fine increases or otherwise (like seasonality.)
 
 ## Conclusions
-<div align="center">
-<img src="img/make_it_rain_money.gif">
-</div>
+![make it rain](img/make_it_rain_money.gif)
+
 The City of Chicago should raise fines to increase revenue, as vehicle owners don't seem to be sensitive to price increases.
 
 ## Future Directions
